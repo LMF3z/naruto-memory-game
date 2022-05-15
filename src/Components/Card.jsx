@@ -20,7 +20,7 @@ const Card = ({ card }) => {
   };
 
   const validPlaying = (item) => {
-    if (!couples.some((i) => i.img === item.img)) {
+    if (!couples.some((i) => i.img === item.img) && play) {
       handlerSelectCard(item);
     }
   };
