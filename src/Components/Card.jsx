@@ -20,7 +20,7 @@ const Card = ({ card }) => {
   };
 
   const validPlaying = (item) => {
-    if (!couples.some((i) => i.img === item.img) && play) {
+    if (!couples.some((i) => i.img === item.img)) {
       handlerSelectCard(item);
     }
   };
@@ -54,7 +54,7 @@ const Card = ({ card }) => {
           <div className="back flex justify-center items-center bg-blue_dark rounded-lg">
             <img
               src={card.img}
-              className="w-95% h-95% rounded-lg"
+              className="w-80% sm:w-95% h-80% sm:h-95% rounded-lg"
               alt="card-img"
               // w-80% h-70% md:w-11/12 md:h-11/12 lg:w-90% lg:h-90%
             />
