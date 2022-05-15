@@ -71,7 +71,7 @@ const Controls = () => {
   }, [couples, actualClock, goal, dispatch, resetClock]);
 
   return (
-    <div className="w-full sm:w-4/5 lg:w-3/5 h-20 flex justify-evenly items-center border border-blue_dark">
+    <div className="w-full sm:w-4/5 lg:w-3/5 h-16 flex justify-evenly items-center border border-blue_dark">
       <div className="w-2/5 h-full flex justify-center items-center">
         <p className="text-lg md:text-xl">{clock} seconds</p>
       </div>
